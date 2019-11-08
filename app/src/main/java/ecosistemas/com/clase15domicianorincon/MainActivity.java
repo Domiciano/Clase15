@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         registrar = findViewById(R.id.registrar);
         lista = findViewById(R.id.lista);
 
+
+        //Eliminar un objeto
+        /*
+        FirebaseDatabase.getInstance().getReference()
+                .child("usuarios")
+                .child("-LtBcWCAvzunzDjxcByS")
+                .setValue(null);
+        */
+
         //Leer UN objeto
         FirebaseDatabase.getInstance().getReference()
                 .child("usuarios")
